@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的個人網頁</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>YUMAO Profile</h1>
+        <ul>
+          <li><a href="#home">首頁</a></li>
+          <li><a href="#about">關於我</a></li>
+          <li><a href="#contact">聯絡方式</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero-section">
+        <div class="hero-content">
+          <h2>你好，我是 YUMAO</h2>
+          <p class="subtitle">前端工程師 | Frontend Developer</p>
+          <div class="social-links">
+            <a href="https://github.com/nkustyumao" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/cheng-chieh-yu-369464270/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>關於我</h2>
+        <div class="about-content">
+          <div class="profile-image">
+            <img src="./image/yumao.jpg" alt="個人照片" />
+          </div>
+          <div class="about-text">
+            <p>
+              目前專注於前端網頁開發，熟悉使用 React 和 Next.js
+              開發現代化的互動式網站，並且有使用過 Redux Toolkit、React Query
+              以及 React Hook Form
+              等技術。除了前端技能，我也具備後端開發經驗，使用 Node.js 和
+              Express 搭配 MySQL 資料庫進行完整的 CRUD
+              操作，實現網站的前後端分離架構。
+              雖然目前以前端技術為主，但我樂於接受挑戰，願意學習包括 Vue.js
+              前端其他技術，同時也不排斥學習後端開發技能。希望透過持續學習，在快速變化的資訊時代持續提升自己，為團隊和專案帶來更高的價值。
+            </p>
+            <div class="skills">
+              <h3>專業技能</h3>
+              <div class="skill-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Bootstrap</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Next</span>
+                <span>Node</span>
+                <span>Express</span>
+                <span>MySQL</span>
+                <span>Nginx</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>作品集</h2>
+        <div class="project">
+          <div class="project-list">
+            <div class="project-image">
+              <img src="./image/lelemom.png" alt="lelemom" />
+            </div>
+            <div class="project-info">
+              <h3>Lelelmom 好吃檸來</h3>
+              <p>甜點咖啡廳網站，提供網路訂購、預約定位以及烘焙醫生等功能。</p>
+              <div class="skill-tags">
+                <span>React</span>
+                <span>Node</span>
+                <span>MySQL</span>
+                <span>Bootstrap</span>
+                <span>Nginx</span>
+              </div>
+              <!-- <a href="#" class="btn">查看更多</a> -->
+            </div>
+          </div>
+          <div class="project-list">
+            <div class="project-image">
+              <img src="./image/bookcamp.png" alt="lelemom" />
+            </div>
+            <div class="project-info">
+              <h3>Bookcamp 書營</h3>
+              <p>專案發想以遊戲與點陣圖風格去做設計，並且以諧音輸贏為網站名稱。</p>
+              <div class="skill-tags">
+                <span>React</span>
+                <span>Node</span>
+                <span>MySQL</span>
+                <span>Bootstrap</span>
+              </div>
+              <!-- <a href="#" class="btn">查看更多</a> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>聯絡我</h2>
+        <div class="contact-content">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">姓名</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">電子郵件</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">訊息</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn">發送訊息</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 我的個人網頁. All rights reserved.</p>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
