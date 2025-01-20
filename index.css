@@ -30,16 +30,20 @@ nav {
 nav ul {
   display: flex;
   list-style: none;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
 nav ul li {
-  margin-left: 2rem;
+  text-align: center;
 }
 
 nav ul li a {
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
 }
 
 nav ul li a:hover {
@@ -234,5 +238,29 @@ footer {
 
   .project {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  nav ul {
+    /* flex-direction: column; */
+    width: 100%;
+    gap: 1rem;
+  }
+
+  nav ul li {
+    width: 100%;
+    margin: 0;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 0.8rem;
   }
 }
