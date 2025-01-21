@@ -111,22 +111,77 @@ footer {
   color: #64ffda;
 }
 
+/* 學歷 */
+#education {
+  padding: 4rem 2rem;
+}
+
+.education-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.education-list {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.education-image {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.education-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.education-info {
+  flex: 1;
+}
+
+.education-info h3 {
+  margin-bottom: 0.5rem;
+}
+
+.education-info p {
+  margin: 0.25rem 0;
+}
+
 /* 關於我區塊樣式 */
 .about-content {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
   gap: 2rem;
   align-items: center;
 }
 
+.profile-image{
+  margin: 0 auto;
+}
+
 .profile-image img {
-  width: 100%;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   border: 3px solid #64ffda;
 }
 
 .about-text{
-  text-align: justify
+  text-align: justify;
+  font-size: 1.2rem;
 }
 
 .skills{
@@ -136,7 +191,7 @@ footer {
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 10px;
   margin-top: 1rem;
 }
 
@@ -177,6 +232,34 @@ footer {
 
 .project-info{
   margin: 1rem 0;
+}
+
+/* 論文區樣式 */
+.paper-content{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.paper-image{
+  margin: 0 auto;
+}
+
+.paper-image img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 3px solid #64ffda;
+  object-fit: cover;
+}
+
+.paper-text{
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.paper-text ul {
+  margin-left: 1rem;
 }
 
 /* 聯絡表單樣式 */
@@ -228,10 +311,19 @@ footer {
 /* 響應式設計 */
 @media (max-width: 768px) {
   .about-content {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 
   .profile-image {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .paper-content {
+    flex-direction: column;
+  }
+
+  .paper-image {
     max-width: 300px;
     margin: 0 auto;
   }
